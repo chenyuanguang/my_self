@@ -134,8 +134,11 @@ ul.nav.navbar li a:hover,ul.nav.navbar li a.active,ul.nav.navbar li a:focus{
 }
 /*--//top-nav--*/
 /*--about--*/
-.about,.work,.education,.skills,.portfolio,.contact{
+.about,.work,.education,.skills,.codes,.portfolio,.contact{
 	padding:6em 0;
+}
+#about{
+    padding-bottom: 0;
 }
 h3.title {
     font-size: 4em;
@@ -304,6 +307,9 @@ background: #F7E612;
 	clear:both;
 	padding: 0;
 }
+.portfolio{
+    background: black;
+}
 .tab_box{
 	background:#fd926d;
 	padding: 2em;
@@ -403,7 +409,8 @@ h2.resp-accordion {
 
 .grid img {
 	max-width: none;
-	width: 100%;
+	width: 370px;
+    height:240px;
 	width: -webkit-calc(100% + 20px);
 	width: calc(100% + 20px);
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -416,6 +423,9 @@ h2.resp-accordion {
 	-ms-transform: translate3d(-10px,0,0);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+}
+#allmap{
+    height: 410px;
 }
 .grid:hover img {
 	-moz-opacity: 0.5;
@@ -498,7 +508,12 @@ h2.resp-accordion {
 /*--//portfolio--*/
 /*--contact--*/
 .contact{
-	background:#000;
+	/*background:#000;*/
+    background:rgba(0,0,0,0.5) url(../images/bg_contact.jpg) no-repeat;
+}
+.contact .container{
+    background:rgba(0,0,0,0.8);
+    padding-bottom: 1rem;
 }
 .contact-left iframe {
     width: 100%;
@@ -1077,6 +1092,7 @@ ul.nav.navbar li a {
 h3.title {
     font-size: 2em;
 }
+
 .progress {
     height: 7px;
 }
